@@ -13,7 +13,7 @@ jobs:
       id: get-issue-inputs
       uses: actions/github-script@v7
       with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.TOKEN }}
           script: |
             const issueBody = context.payload.issue.body.replaceAll("_No response_", "");
 
